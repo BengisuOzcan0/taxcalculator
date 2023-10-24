@@ -15,9 +15,9 @@ public class Main {
 
 
         BigDecimal totalExcludingVAT = Price_before_VAT.multiply(new BigDecimal("10000"));
+        BigDecimal bg2 = Price_WithVAT.setScale(2, RoundingMode.FLOOR);
 
-
-        System.out.println("Value with VAT : " + Price_WithVAT);
+        System.out.println("Value with VAT : " + bg2);
         System.out.println("Value without VAT : " + totalExcludingVAT);
 
 
